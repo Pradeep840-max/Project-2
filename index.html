@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Pradeep Kumar HM | Software Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#0f172a,#1e293b,#0f2027,#203a43);
+  background-size:400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color:white;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(12px);
+  padding:15px;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+.hero{
+  text-align:center;
+  padding-top:160px;
+}
+
+.hero h1{
+  font-size:50px;
+  color:#38bdf8;
+}
+
+.profile-pic{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #38bdf8;
+  margin-bottom:20px;
+  box-shadow:0 0 40px rgba(56,189,248,0.7);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 35px;
+  border-radius:40px;
+  background:#38bdf8;
+  color:black;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.4s;
+}
+
+.btn:hover{
+  background:white;
+  transform:translateY(-5px);
+}
+
+section{
+  padding:120px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.glass{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(15px);
+  border-radius:20px;
+  padding:30px;
+  margin:20px 0;
+  transition:0.4s;
+}
+
+.glass:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px rgba(56,189,248,0.4);
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.social-bar{
+  position:fixed;
+  top:50%;
+  left:20px;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.social-bar a{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+  color:#38bdf8;
+  font-size:20px;
+  transition:0.4s;
+}
+
+.social-bar a:hover{
+  background:#38bdf8;
+  color:#0f172a;
+  transform:scale(1.15);
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#0f172a;
+}
+</style>
+
+</head>
+
+<body>
+<div class="social-container"> 
+  <a href="https://github.com/Pradeep840-max" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/your-linkedin-username" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<img src="profile.jpg" alt="Pradeep Kumar HM" class="profile-pic">
+<h1>Pradeep Kumar HM</h1>
+<div class="typing" id="typing"></div>
+<a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="glass">
+<p>
+Computer Science Engineering student passionate about Java development, 
+full-stack technologies, and problem solving. Focused on building 
+efficient, scalable, and user-friendly applications.
+</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="glass">
+<h3>Library Management System</h3>
+<p>Java + MySQL based system to manage books, users and transactions.</p>
+</div>
+
+<div class="glass">
+<h3>QR Code Reader</h3>
+<p>Java application to scan and process QR data with file handling.</p>
+</div>
+
+<div class="glass">
+<h3>Portfolio Website</h3>
+<p>Modern responsive personal portfolio hosted on GitHub Pages.</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="glass">
+Java • HTML • CSS • JavaScript • MySQL • Git • GitHub • Problem Solving
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="glass">
+  <div style="margin-bottom:25px; text-align:center;">
+
+  <a href="https://github.com/Pradeep840-max" target="_blank"
+     style="display:inline-block; margin:10px; padding:12px 25px;
+     font-weight:bold; font-size:40px; background:#38bdf8;
+     color:white; border-radius:20px; text-decoration:none;">
+     GitHub Profile
+  </a>
+
+  <a href="https://www.linkedin.com/in/pradeep-kumar-b14a73333" target="_blank"
+     style="display:inline-block; margin:10px; padding:12px 25px;
+     font-weight:bold; font-size:30px; background:#ffffff;
+     color:blue; border-radius:20px; text-decoration:none;">
+     LinkedIn Profile
+  </a>
+
+</div>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 Pradeep Kumar HM | Software Developer
+</footer>
+
+<script>
+const texts=["Computer Science Student","Java Developer","Future Software Engineer"];
+let i=0,j=0,current="";
+let element=document.getElementById("typing");
+
+function type(){
+if(j<texts[i].length){
+current+=texts[i][j];
+element.innerHTML=current;
+j++;
+setTimeout(type,100);
+}else{
+setTimeout(erase,1500);
+}
+}
+
+function erase(){
+if(j>0){
+current=current.slice(0,-1);
+element.innerHTML=current;
+j--;
+setTimeout(erase,50);
+}else{
+i=(i+1)%texts.length;
+setTimeout(type,300);
+}
+}
+type();
+</script>
+
+</body>
+
+</html>
